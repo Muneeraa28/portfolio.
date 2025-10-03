@@ -1,0 +1,234 @@
+nav {
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    gap: 570px;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}   
+nav a:hover {
+    color: rgb(155, 226, 218);
+}
+nav div {
+    display: flex;
+    gap: 20px;
+}
+nav h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(239, 157, 122);
+}
+.intro {
+    padding: 60px;
+    background-color: rgb(61, 64, 64);
+  display: flex; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.intro h1 {
+  
+    color: rgb(243, 148, 141);
+}
+.intro h3 {
+    font-size: 20px;
+  color: rgb(240, 187, 187);
+    margin-top: 20px;
+}
+.intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.Services {
+    padding: 50px;
+    background-color: rgb(102, 107, 107);
+    text-align: center;
+}
+.Services h1 {
+    color: rgb(218, 153, 92);
+    font-size: 36px;
+    font-weight: bold;
+}
+.Services p {
+    font-size: 18px;
+    color: rgb(245, 243, 243);
+    margin-top: 20px;
+}
+.card {
+    background-color: rgb(213, 209, 193);
+    
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+.card h2 {
+    color: rgb(37, 3, 3);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card p {
+    color: rgb(68, 66, 66);
+    font-size: 16px;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.Projects {
+    padding: 50px;
+    background-color: rgb(122, 123, 123);
+    text-align: center;
+}
+.Projects h1 {
+    color: rgb(239, 154, 75);
+    font-size: 36px;
+    font-weight: bold;
+}
+.Projects p {
+    font-size: 18px;
+    color: rgb(245, 243, 243);
+    margin-top: 20px;
+}
+.project-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card h1 {
+    color: rgb(37, 3, 3);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card p {
+    color: rgb(68, 66, 66);
+    font-size: 16px;
+}
+.Skills {
+    padding: 50px;
+    background-color: rgb(81, 85, 85);
+    text-align: center;
+}   
+.Skills h1 {
+    color: rgb(218, 153, 92);
+    font-size: 36px;
+    font-weight: bold;
+}
+.Skills p {
+    font-size: 18px;
+    color: rgb(245, 243, 243);
+    margin-top: 20px;
+}
+.bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.progress {
+    background-color: rgb(213, 209, 193);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 300px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.Contact {
+    padding: 50px;
+    background-color: rgb(102, 107, 107);
+    text-align: center;
+}
+.Contact h1 {
+    color: rgb(218, 153, 92);
+    font-size: 36px;
+    font-weight: bold;
+}
+.Contact p {
+    font-size: 18px;
+    color: rgb(245, 243, 243);
+    margin-top: 20px;
+}
+.Contact a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgb(213, 209, 193);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.Contact a:hover {
+    background-color: rgb(155, 226, 218);
+}
+
+@media screen and (max-width: 1024px) {
+    .intro, .Services, .Projects, .Skills, .Contact {
+        padding: 40px;
+    }
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .intro, .Services, .Projects, .Skills, .Contact {
+        padding: 20px;
+    }
+    .project-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .progress {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    nav h1 {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .intro h1 {
+        font-size: 28px;
+    }
+    .Services h1, .Projects h1, .Skills h1, .Contact h1 {
+        font-size: 28px;
+    }
+    .card h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
